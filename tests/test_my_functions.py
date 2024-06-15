@@ -24,3 +24,10 @@ def test_divide_by_zero():
     with pytest.raises(ValueError):
         my_func.divide(10, 0)
 
+
+@pytest.mark.skip(reason="not implemented features")
+def test_add_intAndString():
+    expected = 5
+    actual = my_func.add(1, "4")
+    assert actual == expected
+
